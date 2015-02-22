@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <default>
+
+       
+        <remove name="paypal.partner.right.logo" />
+        <remove name="tags_popular" />
+        <remove name="left.permanent.callout"/>
+        <reference name="head">
+
+
+        <action method="addItem">
+            <type>skin_js</type>
+            <name>js/jquery.js</name>
+             </action>
+
+
+        <action method="addItem">
+            <type>skin_js</type>
+            <name>js/bootstrap.min.js</name>
+             </action>
+
+
+   
+        </reference>
+
+ 
+</default>
+
+
+   <checkout_onepage_success>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+    </checkout_onepage_success>
+
+    <checkout_onepage_failure>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+    </checkout_onepage_failure>
+
+</layout>
